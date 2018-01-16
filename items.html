@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>物品 Items - 《DOTA2》</title>
+    <link rel="Shortcut Icon" href="img/main/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/stackCarousel.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/items.css">
+</head>
+<body>
+    <div id="header">
+
+    </div>
+
+    <div id="content">
+        <div class="bg">
+            <!-- top -->
+            <div class="item_top clear">
+                <!-- left top -->
+                <ul class="top_tab_ul">
+                    <li><a href="#">全部物品</a></li>
+                    <li><a href="#">物品测试</a></li>
+                </ul>
+                <!-- right top  -->
+                <div class="top_search">
+                    <div class="top_search_help">
+                        <input type="text" placeholder="请输入搜索内容" class="search_inp">
+                        <a href="#" class="search_a">搜索</a>
+                    </div>
+                    <div class="top_search_help">
+                        <a href="#" class="btn_col"></a>
+                        <a href="#" class="btn_err"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 所有装备介绍 -->
+            <div class="item_cont">
+                <div class="item_cont_info">
+                    <!-- 显示装备名称 和 装备属性/介绍 -->
+                    <div class="tit_box">
+                        <!-- 页面初始化显示 -->
+                        <div class="item_name">所有物品</div>
+                        <!-- 选择对应装备后显示 -->
+                        <div class="item_describe">
+                            <div class="item_des_header">
+                                <h3>狂战斧(近战不出狂战斧,不如回家种红薯)</h3>
+                                <span class="inbl goldIcon">
+                                    <img src="img/itemes/gold-w825.png" alt="">
+                                </span>
+                                <span class="inbl goldCost">4100</span>
+                            </div>
+                            <div class="item_des_img">
+                                <img src="img/itemes/bfury_lg-w748.png" alt="">
+                            </div>
+                            <div class="item_des_detail">
+                                <span>
+                                    持有这把强大斧头的人可以一次砍倒一片敌人。
+                                </span>
+                                <span>
+                                    <h3>主动:砍伐/排眼</h3>
+                                    砍伐一根指定树木，或者摧毁一个守卫。
+                                    <br><br>
+                                    砍伐施法距离：350
+                                    <br>
+                                    排眼施法距离：450
+                                    <h1>被动：压制</h1>
+                                    对非英雄单位进行物理攻击会造成额外伤害，
+                                    近战英雄为60%，远程英雄为25%。\n
+                                    <h1>被动：分裂</h1>
+                                    普通攻击时对目标周围最远625距离的锥形区域内敌人造成40%分裂伤害。（仅近战有效）
+                                </span>
+                                <span>
+                                    <p class="pop_skill_p">
+                                        +伤害：
+                                        <span class="color_yellow">45</span>
+                                    </p>
+                                    <p class="pop_skill_p">
+                                        +生命回复：
+                                        <span class="color_yellow">
+                                            6
+                                        </span>
+                                    </p>
+                                    <p class="pop_skill_p">
+                                        +魔法恢复：
+                                        <span class="color_yellow">
+                                            2.25
+                                        </span>
+                                    </p>
+                                    &nbsp;
+                                    <div class="cooldownMana">
+                                        <img alt="冷却时间" title="冷却时间" class="cooldownImg" src="http://cdn.dota2.com/apps/dota2/images/tooltips/cooldown.png" width="22" height="22" border="0">
+                                        4.0
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 装备分类 -->
+                    <div class="item_filters">
+                        <!-- 基础物品 -->
+                        <span class="baseItems">基础物品</span>
+                        <!-- 升级物品 -->
+                        <span class="upItems">升级物品</span>
+                        <!-- 英雄名称 -->
+                        <span class="secretItems">神秘商品</span>
+                    </div>
+                    <!-- 装备分类 显示出来 -->
+                    <div class="item_show">
+                        <!-- 消耗品 -->
+                        <ul class="item_list clear">
+                            <li class="item_list_tit">
+                                <img src="img/itemes/itemcat_attributes-w663.png">
+                                <span class="item_str">消耗品</span>
+                            </li>
+                            <li class="item_show_list">
+                                <a href="#">
+                                    <!-- 小图 show -->
+                                    <img src="img/itemes/branches_lg-w660.png" class="item_hover_sm">
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- 属性 -->
+                        <ul class="item_list">
+                            <li class="item_list_tit">
+                                <img src="img/itemes/itemcat_caster-w752.png" alt="">
+                                <span class="item_agi">属性</span>
+                            </li>
+                            <li class="item_show_list">
+                                <a href="#">
+                                    <!-- 小图 show -->
+                                    <img src="img/itemes/branches_lg-w660.png" class="item_hover_sm">
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- 军备 -->
+                        <ul class="item_list">
+                            <li class="item_list_tit">
+                                <img src="img/itemes/itemcat_caster-w752.png" alt="">
+                                <span class="item_int">军备</span>
+                            </li>
+                            <li class="item_show_list">
+                                <a href="#" class="clear">
+                                    <!-- 小图 show -->
+                                    <img src="img/itemes/branches_lg-w660.png" class="item_hover_sm">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+
+    </div>
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+    $(".item_show_list>a").hover(
+        function (){
+        $(this).children(".item_hover_lg").show()
+    },
+        function(){
+        $(this).children(".item_hover_lg").hide()
+    })
+</script>
+</html>

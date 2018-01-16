@@ -1,0 +1,229 @@
+/* header - start */
+#header{
+		background-color:#040404;
+		background:linear-gradient(to bottom, #040404 0%,#16181C 98%,#818181 100%);
+		width:100%;
+		height:80px;
+		vertical-align: middle;
+}
+#header .header-top{
+		width:1200px;
+		height:80px;
+		margin:0 auto;
+		vertical-align: middle;
+		position:relative;
+}
+#header .header-top .header-ico a{
+		width:260px;
+		height:40px;
+		vertical-align: middle;
+		margin-top:20px;
+		background:url("../img/main/dota2.home.log.png") no-repeat;
+}
+#header .header-top .header-nav ul{
+		vertical-align: middle;
+		margin-left:20px;
+}
+#header .header-top .header-nav ul li{
+		color:#827c79;
+		/*width:78px;*/
+		position:relative;
+		display: inline-block;
+		text-align:center;
+		/*margin:23px 7px;*/
+		box-sizing:content-box;
+		width:92px;
+		/*padding-top:20px;*/
+		/*margin-left: 0px;*/
+}
+#header .header-top .header-nav ul li:hover{
+		background-color:#040404;
+}
+#header .header-top .header-nav ul li>a:hover{
+		color:#01C0EF;
+}
+#header .header-top .header-nav ul li>a{
+		display: inline-block;
+		vertical-align: middle;
+		text-align: center;
+		width:78px;
+		margin:23px 7px;
+}
+#header .header-top .header-nav ul li a span{
+		width:78px;
+		display: block;
+		border: none;
+		font: inherit;
+		text-align: center;
+		vertical-align: baseline;
+		padding:0;
+		margin:0;
+		color:inherit;
+}
+#header .header-top .header-nav ul li a span:first-child{
+		font-size:16px;
+		line-height:16px;
+}
+#header .header-top .header-nav ul li a span:last-child{
+		font-size:12px;
+		transform:scale(0.75,0.75);
+}
+#header .header-top .info{
+		height:80px;
+		padding-top: 15px;
+		position:relative;
+}
+#header .header-top .info>i{
+		width:50px;
+		height:50px;
+		border:1px solid #262323;
+		border-radius: 50%;
+		background-image:url("../img/main/icons.png");
+		background-position: 13px -451px;
+}
+#header .header-top .info .box-login{
+		margin-left:10px;
+}
+#header .header-top .info .box-login p{
+		color:#fff;
+		font-size:18px;
+		width:170px;
+		height:20px;
+		vertical-align: middle;
+		line-height:18px;
+		overflow:hidden;
+		white-space: nowrap;
+}
+#header .header-top .info .box-login p>span{
+		display:inline-block;
+		line-height:18px;
+		font-size:18px;
+		overflow:hidden;
+}
+#header .header-top .info .box-login p>span:last-child{
+		display:inline-block;
+		width:150px;
+		line-height:18px;
+		font-size:18px;
+		overflow:hidden;
+}
+#header .header-top .info .box-login p>span>a{
+		font:inherit;
+		color:#00B7F4;
+		line-height:18px;
+}
+#header .header-top .info .box-login>span{
+		color:#898989;
+		font-size:12px;
+}
+#header .header-top .info .box-login>span>a{
+		color:#898989;
+		font-size:12px;
+}
+#header .header-nav .link_show{
+		display: none;
+		/*display: inline-block;*/
+		position: absolute;
+		top: 80px;
+		left: 0;
+		padding-top: 10px;
+		/*width: 92px;*/
+		width:100%;
+		height: 240px;
+		font-size: 15px;
+		line-height: 30px;
+		text-align: center;
+		background-color:rgba(0,0,0,.7);
+		background-size: cover;
+		z-index:10;
+		transition:all .5s;
+}
+#header .header-nav .link_show a{
+		display: block;
+		font-size: 15px;
+		color: #827c79;
+		outline: none;
+}
+#header .header-nav .link_show a:hover{
+		background-color:#141414;
+		color:#01C0EF;
+}
+ 
+/* DOTA2账号详情 */
+#header .header-top .info .userData {
+    width:370px;
+    height:370px;
+    z-index:10;
+    position:absolute;
+    top:80px;
+    right:0;
+    background:#131313;
+    color:#898989;
+}
+#header .header-top .info .userData>h3{
+    padding:10px 0;
+    text-align: left;
+    color:inherit;
+    border-bottom:2px solid #1E1E1E;
+    font-size:16px;
+}
+#header .header-top .info .userData>h3>span{
+    font:inherit;
+}
+#header .header-top .info .userData h3>i{
+    width:14px;
+    height:14px;
+    border:1px solid #0AA1ED;
+    border-radius:50%;
+    color:#0aa1ed;
+    cursor: pointer;
+    font-size:10px;
+    display: inline-block;
+    text-align: center;
+    line-height:10px;
+    transform: scale(0.9);
+    margin-left:5px;
+}
+#header .header-top .info .userData .dataDetail{
+    width:100%;
+    position:relative;
+}
+#header .header-top .info .userData .dataDetail .dataLf{
+    width:100px;
+    height:100px;
+    border:1px solid #fff;
+    vertical-align: baseline;
+    margin:15px 10px;
+}
+#header .header-top .info .userData .dataDetail .dataLf>a>img{
+    width:100%;
+    height:100%;
+}
+#header .header-top .info .userData .dataDetail .dataRt{
+    width:220px;
+    margin:10px;
+    vertical-align: baseline;
+}
+#header .header-top .info .userData .dataDetail .dataRt>p{
+    width:100%;
+    display: block;
+    height:30px;
+    line-height:30px;
+    vertical-align: middle;
+}
+#header .header-top .info .userData .dataDetail .dataRt .data-info-lf{
+    margin-right:10px;
+    width:75px;
+    display: inline-block;
+    vertical-align: top;
+}
+#header .header-top .info .userData .dataDetail .dataRt .data-info-rt{
+    margin-right:10px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    width:110px;
+}
+
+/* header - end */

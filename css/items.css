@@ -1,0 +1,196 @@
+#content {
+    width:100%;
+    background: #141516;;
+}
+#content .bg{
+    width:100%;
+    background-color: #141516;
+}
+#content .bg .item_top{
+    background-color:#1F2021;
+    width:1000px;
+    height: 115px;
+    padding: 0 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url('../img/itemes/items_top_bg.jpg');
+}
+#content .bg .item_top .top_tab_ul{
+    float: left;
+    padding-top: 69px;
+    height: 42px;
+    /*overflow: hidden;*/
+    display: inline-block;
+}
+#content .bg .item_top .top_tab_ul>li{
+    float: left;
+    display: inline-block;
+    width: 129px;
+    margin-right: 1px;
+    background:red;
+		border-radius:5px;
+		background:url("../img/itemes/top_tab-w639.jpg");
+}
+#content .bg .item_top .top_tab_ul>li>a{
+    display: inline-block;
+    width: 129px;
+    height: 42px;
+    text-align: center;
+    color: #c0c0c0;
+		background: linear-gradient(to bottom,#913333 0% , #892F2E 10% ,#501F1A 100%);
+    background:url("../img/itemes/top_tab-w639.jpg");
+    background-position: 0 -42px;
+    line-height: 40px;
+    font-size: 20px;
+		border-radius:5px;
+}
+#content .bg .item_top .top_tab_ul>li>a:hover{
+    background-position: 0 0 ;
+}
+#content .bg .item_top .top_search{
+    float: right;
+    width: 248px;
+    padding-top: 22px;
+}
+#content .bg .item_top .top_search .top_search_help{
+    width: 248px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+#content .bg .item_top .top_search .top_search_help .search_inp{
+    float: left;
+    width: 167px;
+    height: 22px;
+    padding: 0 5px;
+    color: #717779;
+    font: normal 12px/22px "宋体";
+    background-color: #1a1d1e;
+    border: 1px solid #2c2f33;
+    border-collapse:collapse;
+    /*去掉输入框蓝色边框*/
+    outline:medium;
+}
+#content .bg .item_top .top_search .top_search_help .search_a{
+    width:65px;
+    height:25px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border-radius:3px;
+    margin-left:10px;
+    background: linear-gradient(to bottom,#913333 0% , #892F2E 10% ,#501F1A 100%);
+}
+#content .bg .item_top .top_search .top_search_help .btn_col,.btn_err{
+    width: 120px;
+    height: 30px;
+    border: 3px solid #27292b;
+    cursor: pointer;
+}
+#content .bg .item_top .top_search .top_search_help .btn_col{
+    float: left;
+    background-image: url("../img/heroes/btn_shoucang-w382.png");
+}
+#content .bg .item_top .top_search .top_search_help .btn_err{
+    float: right;
+    background-image: url(../img/heroes/btn_baocuo.png);
+}
+/* 所有英雄 */
+#content .item_cont{
+    width: 982px;
+    height:660px;
+    padding: 35px 0 50px;
+    min-height: 300px;
+    margin: 0 auto;
+    background-color: #0f0f0f;
+}
+#content .item_cont .item_cont_info{
+    padding: 0 22px;
+}
+#content .item_cont .item_cont_info .tit_box{
+    background: #000;
+    margin-bottom: 14px;
+    padding: 14px 6px;
+    border-radius: 5px;
+}
+#content .item_cont .item_cont_info .tit_box .item_name{
+    height: 40px;
+    margin-top: 15px;
+    text-align: center;
+    font: bold 24px/40px "微软雅黑";
+    color: #c0c0c0;
+}
+#content .item_cont .item_cont_info .item_filters{
+    text-align: center;
+    padding-bottom: 10px;
+    color: #999;
+    width:900px;
+    margin:0 auto;
+    position:relative;
+    height:20px;
+}
+#content .item_cont .item_cont_info .item_filters>span{
+    width:33%;
+    display: inline-block;
+    text-align: left;
+}
+#content .item_cont .item_cont_info .item_show{
+    width: 870px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+#content .item_cont .item_cont_info .item_show ul.item_list{
+    width: 80px;
+    padding: 0 6px;
+    float: left;
+}
+#content .item_cont .item_cont_info .item_show ul.item_list>li{
+    width: 69px;
+    height: 44px;
+    float: left;
+    position: relative;
+}
+#content .item_cont .item_cont_info .item_show ul.item_list>li>a{
+    float: left;
+    position: relative;
+    display: block;
+}
+#content .item_cont .item_cont_info .item_show .item_list .item_list_tit{
+    width: 80px;
+    height: 800px;
+    text-align: center;
+}
+#content .item_cont .item_cont_info .item_show .item_list .item_list_tit>span{
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    font-size: 16px;
+    color: #616363;
+}
+#content .item_cont .item_cont_info .item_show .item_list .item_hover_lg{
+    width: 127px;
+    height: 71px;
+    border: 4px solid #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 4px 4px #1C1E1E;
+    -moz-box-shadow: 0px 0px 4px 4px #1c1e1e;
+    -moz-border-radius: 3px;
+    box-shadow: 0px 0px 4px 4px #1C1E1E;
+    position: absolute;
+    top: -19px;
+    left: -34px;
+    z-index: 3;
+}
+.item_hover_lg{display: none;}
+#content .item_cont .item_cont_info .item_show .item_list .item_hover_sm{
+    width: 59px;
+    height: 33px;
+    border: 4px solid #000;
+    border-radius: 3px;
+    box-sizing: content-box;
+}
+/*.item_cont_info .item_show .item_list .item_hover_sm:hover  .item_hover_lg{*/
+    /*display: inline-block;*/
+/*}*/
+
+
+

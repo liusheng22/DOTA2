@@ -1,0 +1,718 @@
+#content .bg{
+    background-color: #121315;
+}
+/* 英雄顶部信息 */
+#content .bg .bar_top{
+    width: 1000px;
+    height: 98px;
+    padding: 0 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* 英雄名片 */
+#content .bg .bar_top .top_hero_card {
+    float: left;
+    width: 252px;
+    overflow: hidden;
+}
+#content .bg .bar_top .top_hero_card>div.lf{
+    float: left;
+    width: 98px;
+    height: 54px;
+    padding: 3px;
+    overflow: hidden;
+}
+#content .bg .bar_top .top_hero_card>div.lf>img{
+    display: inline-block;
+    width: 98px;
+    height: 54px;
+    cursor: pointer;
+}
+#content .bg .bar_top .top_hero_card>p.lf{
+    float: left;
+    width: 134px;
+    padding: 6px 0 0 10px;
+    font: normal 14px Arial;
+    color: #444445;
+}
+/* 新手推荐，热门英雄，美型英雄 */
+#content .bg .bar_top .top_hero_info{
+    width:550px;
+    display: inline-block;
+    float: left;
+    padding-left: 15px;
+    border: 3px solid #27282A;
+}
+#content .bg .bar_top .top_hero_info>ul>li{
+    display: list-item;
+    height: 20px;
+    line-height: 20px;
+    text-align: -webkit-match-parent;
+}
+#content .bg .bar_top .top_hero_info>ul>li>span{
+    color: #c0c0c0;
+    font-weight: bold;
+    line-height: 20px;
+    font-size:14px;
+}
+#content .bg .bar_top .top_hero_info>ul>li>a{
+    line-height: 20px;
+    outline: none;
+    cursor: pointer;
+    color: #6e6e6e;
+    font-size:12px;
+    text-decoration: none;
+}
+/* 右边搜索/收藏等 标签 */
+#content .bg .bar_top .top_hero_search{
+    width: 140px;
+    overflow: hidden;
+    float: right;
+    padding-top: 10px;
+}
+#content .bg .bar_top .top_hero_search>a{
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+    height: 23px;
+    line-height:23px;
+    border: 3px solid #27292b;
+    cursor: pointer;
+    width: 115px;
+    text-align:center;
+    overflow: hidden;
+}
+/* 英雄详情 */
+#content .hero_detail{
+    width: 982px;
+    margin: 25px auto 0;
+    padding: 0 10px 50px;
+    overflow: hidden;
+}
+/* 英雄详情左边 */
+#content .hero_detail .detail_left{
+    float: left;
+    width: 298px;
+}
+/* 英雄资料 */
+#content .hero_detail .detail_left .hero_info{
+    width:100%;
+}
+/* 1、英雄名片 */
+#content .hero_detail .detail_left .hero_info .hero_card{
+    width: 298px;
+    padding: 20px 0;
+    background: url(../img/info_bg.png) center top no-repeat #501e19;
+}
+#content .hero_detail .detail_left .hero_info .hero_card>img{
+    display: block;
+    width: 235px;
+    height: 272px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #2b100d;
+}
+#content .hero_detail .detail_left .hero_info .hero_name{
+    text-align: center;
+    height: 40px;
+    margin-top: 15px;
+    font: bold 24px/40px "微软雅黑";
+    color: #c0c0c0;
+    background-color: #501E19;
+}
+#content .hero_detail .detail_left .hero_info ul.detail_list{
+    width: 258px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+#content .hero_detail .detail_left .hero_info ul.detail_list>li{
+    width: 218px;
+    padding: 8px 20px;
+    margin-top: 2px;
+    display: inline-block;
+    background-color: #280f0c;
+}
+#content .hero_detail .detail_left .hero_info ul.detail_list>li>span{
+    float: left;
+    width: 90px;
+    line-height: 18px;
+    color: #c0c0c0;
+    text-align: right;
+}
+#content .hero_detail .detail_left .hero_info ul.detail_list>li>p{
+    float: left;
+    width: 120px;
+    line-height: 18px;
+    color: #c7c7c7;
+    font-size:12px;
+}
+#content .hero_detail .detail_left .hero_info ul.detail_list>li>p.zhengying_p{
+    padding-top:7px;
+}
+#content .hero_detail .detail_left .hero_info ul.detail_list>li>p>span{
+    margin: 0;
+    padding: 0;
+    color: #6E6E6E;
+    line-height:18px;
+}
+#content .hero_detail .detail_left .hero_info ul.detail_list>li>p>img{
+    vertical-align: middle;
+    width:20px;
+    height:20px;
+}
+/* 2、英雄属性 */
+#content .hero_detail .detail_left .hero_info .hero_attr{
+    width: 298px;
+    padding-bottom: 15px;
+    background-color: #0f0f0f;
+}
+h2.til_name{
+    text-align: center;
+}
+#content .hero_detail .detail_left .hero_info .hero_attr .bwh_box{
+    width: 270px;
+    height: 165px;
+    margin: 0 auto;
+    padding-top: 15px;
+    background-color: #141516;
+    border: 1px solid #1b1d1e;
+}
+#content .hero_detail .detail_left .hero_info .hero_attr .bwh_box>li{
+    float: left;
+    width: 90px;
+    height: 85px;
+    text-align: center;
+    font: bold 12px/22px "宋体";
+    color: #6e6e6e;
+}
+#content .hero_detail .detail_left .hero_info .hero_attr .bwh_box>li>.bwh_att{
+    width: 44px;
+    height: 44px;
+    margin: 0 auto;
+    background: url(../img/pro.png);
+}
+#content .hero_detail .detail_left .hero_info .hero_attr .bwh_box>li>.bwh2{
+    background-position: -44px -44px;
+}
+#content .hero_detail .detail_left .hero_info .hero_attr .bwh_box>li>.bwh3{
+    background-position: 0px -88px;
+}
+#content .hero_detail .detail_left .hero_info .hero_attr .bwh_box>li>.bwh4,.bwh5,.bwh6{
+    width: 54px;
+    height: 39px;
+    margin: 0 auto;
+}
+#content .hero_detail .detail_left .hero_info .hero_attr .bwh_box>li>.bwh4{
+    background:url("../img/bwh4.png")
+}
+#content .hero_detail .detail_left .hero_info .hero_attr .bwh_box>li>.bwh5{
+    background:url("../img/bwh5.png")
+}
+#content .hero_detail .detail_left .hero_info .hero_attr .bwh_box>li>.bwh6{
+    background:url("../img/bwh6.png")
+}
+/* 3、英雄等级 */
+#content .hero_detail .detail_left .hero_info .hero_level{
+    width:100%;
+}
+#content .hero_detail .detail_left .hero_info .area_box{
+    width: 232px;
+    margin: 20px auto 0;
+    padding: 5px 20px 10px;
+    background-color: #141516;
+    font-size:12px;
+}
+#content .hero_detail .detail_left .hero_info .area_box p.area_box_one>span{
+    color: #6e6e6e;
+}
+#content .hero_detail .detail_left .hero_info .area_box p.area_box_one>span>span{
+    color: #ab4d3a;
+}
+#content .hero_detail .detail_left .hero_info .area_box p.area_box_two>span{
+    color: #ab4d3a;
+}
+/* 英雄荣耀 */
+#content .hero_detail .detail_left .hero_info .hero_honor{
+    width: 298px;
+    margin-top: 15px;
+    padding-bottom: 7px;
+    background-color: #0f0f0f;
+}
+#content .hero_detail .detail_left .hero_info .hero_honor>p{
+    margin:10px 0;
+    display: block;
+}
+#content .hero_detail .detail_left .hero_info .hero_honor>p>img{
+    width:30px;
+    height:23px;
+}
+#content .hero_detail .detail_left .hero_info .hero_honor>p>span{
+    line-height:18px;
+    vertical-align: top;
+}
+
+/* 英雄详情右边 */
+#content .hero_detail .detail_right{
+    float: right;
+    width: 660px;
+}
+h2.right_h2{
+    width: 664px;
+    height: 45px;
+    margin-top: 25px;
+    font: bold 24px/45px "微软雅黑";
+    color: #c0c0c0;
+    background-color: #0a0a0a;
+    border-bottom: 5px solid #451d19;
+    text-indent: 10px;
+}
+/* 英雄背景 */
+#content .hero_detail .detail_right .storyBg{
+    width:100%;
+    height:150px;
+}
+#content .hero_detail .detail_right .storyBg .story_box{
+    height:120px;
+    overflow: hidden;
+}
+#content .hero_detail .detail_right .storyBg .story_box>a{
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 104px;
+    padding: 3px;
+    margin: 0 10px 5px 0;
+    background-color: #1f1f1f;
+    border: 1px solid #000000;
+    overflow: hidden;
+}
+#content .hero_detail .detail_right .storyBg .story_box>a>.story_img_s{
+    width: 180px;
+    height: 104px
+}
+#content .hero_detail .detail_right .storyBg .story_box>a>.story_add{
+    position: absolute;
+    width: 15px;
+    height: 16px;
+    right: 5px;
+    bottom: 5px;
+}
+#content .hero_detail .detail_right .storyBg .show_text{
+    overflow: hidden;
+    height:110px;
+    width:450px;
+    display: inline-block;
+    float:right;
+}
+#content .hero_detail .detail_right .storyBg .show_more{
+    color: #83351D;
+    cursor: pointer;
+    font-size:12px;
+    position:relative;
+    right:0px;
+    text-align: right;
+    left:620px;
+}
+/* 视频教学 */
+#content .hero_detail .detail_right .hero_video{
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+#content .hero_detail .detail_right .hero_video .video_tab_box{
+    width: 664px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+#content .hero_detail .detail_right .hero_video .video_tab_box .video_play{
+    float: left;
+    width: 378px;
+}
+#content .hero_detail .detail_right .hero_video .video_tab_box .video_play>span{
+    float: left;
+    width: 100px;
+    height: 30px;
+    background-color: #1f2021;
+    border: 1px solid #141516;
+    border-bottom: 1px solid #0e0f0f;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+#content .hero_detail .detail_right .hero_video .video_tab_box .hero_text{
+    width:270px;
+    float: right;
+}
+#content .hero_detail .detail_right .hero_video .video_tab_box .hero_text>p{
+    height: 31px;
+    text-indent: 10px;
+    color: #8b3425;
+    font: normal 14px/31px "微软雅黑";
+}
+#content .hero_detail .detail_right .hero_video .video_tab_box .hero_text .gl_box{
+    width: 241px;
+    height: 77px;
+    padding: 10px;
+    margin-bottom: 2px;
+    border: 4px solid #0c0c0c;
+    overflow: hidden;
+}
+#content .hero_detail .detail_right .hero_video .video_tab_box .hero_text .gl_box>p{
+    width: 241px;
+    height: 18px;
+    font: bold 12px/18px "宋体";
+    color: #c0c0c0;
+    overflow: hidden;
+}
+#content .hero_detail .detail_right .hero_video .video_tab_box .hero_text .gl_box>a{
+    width: 241px;
+    padding-top: 5px;
+    overflow: hidden;
+}
+#content .hero_detail .detail_right .hero_video .video_tab_box .hero_text .gl_box>a>span{
+    float: right;
+    width: 140px;
+    height: 54px;
+    line-height: 18px;
+    overflow: hidden;
+}
+
+/* 天赋树 */
+#content .hero_detail .detail_right .talent_tree{
+    width:665px;
+    height:300px;
+}
+#content .hero_detail .detail_right .talent_tree .tree_box{
+    padding: 10px 13px 10px;
+}
+#content .hero_detail .detail_right .talent_tree .tree_box ul.talent_ul{
+    padding: 10px 13px 10px;
+}
+#content .hero_detail .detail_right .talent_tree .tree_box ul.talent_ul>li{
+    float: left;
+    display: inline;
+    width: 624px;
+    margin: 0 0 10px 5px;
+    height: 50px;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+}
+#content .hero_detail .detail_right .talent_tree .tree_box ul.talent_ul>li>.talent-explain{
+    color: #c0c0c0;
+    font-size: 14px;
+    font-family: "微软雅黑","宋体",Arial,Helvetica,sans-serif;
+    width: 282px;
+    height: 48px;
+    float: left;
+    line-height: 48px;
+}
+#content .hero_detail .detail_right .talent_tree .tree_box ul.talent_ul>li>.level-external{
+    width: 46px;
+    height: 46px;
+    border-radius: 24px;
+    border: 2px solid #000;
+    float: left;
+}
+#content .hero_detail .detail_right .talent_tree .tree_box ul.talent_ul>li>.level-external>.level-interior {
+    width: 42px;
+    height: 42px;
+    border-radius: 22px;
+    line-height: 44px;
+    background-color: #000;
+    color: #e7d291;
+    font-size: 18px;
+    text-shadow: 0 0 5px #fd6a29, 0 0 5px #fd6a29;
+    border: 2px solid #2c2f33;
+    font-family: helvetica, arial, sans-serif;
+}
+
+/* 技能介绍 */
+#content .hero_detail .detail_right .skill{
+    width: 644px;
+    padding: 10px;
+    background-color: #0f0f0f;
+}
+#content .hero_detail .detail_right .skill .skill_box{
+    width:100%;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_title{
+    position: relative;
+    width: 644px;
+    height: 36px;
+    overflow: hidden;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_title>a.skill_change{
+    position: absolute;
+    width: 23px;
+    height: 36px;
+    top: 0;
+    cursor: pointer;
+    color: #5B5C5C;
+    font-size: 29px;
+    background:#141516;
+    text-align: center;
+    line-height:36px;
+    border:1px solid #202122;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_title>a.skill_changeLf{
+    left:0;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_title>a.skill_changeRt{
+    right:0;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_title>ul{
+    width:592px;
+    position: absolute;
+    height: 36px;
+    left: 28px;
+    top: 0;
+    overflow: hidden;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_title>ul>li.skill_list{
+    position: absolute;
+    width: 146px;
+    height: 30px;
+    padding: 2px 0;
+    top: 0;
+    font: normal 14px/30px "微软雅黑";
+    cursor: pointer;
+    color: #6e6e6e;
+    background-color: #141516;
+    border: 1px solid #202122;
+    overflow: hidden;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_title>ul>li.skill_first{
+    color: #c0c0c0;
+    background-color: #501e19;
+    border: 1px solid #60241e;
+    opacity: 0.9;
+    left: 0px;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_title>ul>li:hover{
+    /* 鼠标移入技能列表时 改变样式 */
+    color: #c0c0c0;
+    background-color: #501e19;
+    border: 1px solid #60241e;
+    opacity: 0.9;
+    left: 0px;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_title>ul>li.skill_list>img{
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 0 10px;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_detail{
+    /* 技能详情 */
+    width: 600px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+    overflow: hidden;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_detail .skill_img{
+    float: left;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_detail .skill_info{
+    float: right;
+    width: 492px;
+    display: inline-block;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_detail .skill_info .skill_intro{
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_detail .skill_info .skill_intro>span{
+    font: bold 20px/36px "微软雅黑";
+    color: #c0c0c0;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_detail .skill_info .color_green{
+    color: #6fe771;
+    font-weight: bold;
+    line-height: 20px;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_detail .skill_info .xiaohao_wrap{
+    height: 24px;
+    padding: 15px 0;
+    overflow: hidden;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_detail .skill_info .xiaohao_wrap>.icon_xh{
+    background: url('../img/icon_xiaohao.png') no-repeat;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_detail .skill_info .xiaohao_wrap>.icon_lq{
+    background: url('../img/icon_lengque.png') no-repeat;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_detail .skill_info .xiaohao_wrap>.icon_both{
+    float: left;
+    width: 210px;
+    height: 24px;
+    padding-left: 30px;
+    line-height: 24px;
+    display: inline-block;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_detail .skill_info .skill_detl_ul{
+    width: 492px;
+    overflow: hidden;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_detail .skill_info .skill_detl_ul>li{
+    float: left;
+    width: 245px;
+    height: 20px;
+    font-size:12px;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_detail .skill_info .skill_detl_ul>li>.color_white{
+    color:#c0c0c0;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_detail .skill_info .skill_v{
+    margin:5px 0;
+}
+#content .hero_detail .detail_right .skill .skill_box .skill_bot{
+    height: 32px;
+    line-height: 32px;
+    background-color: #1a1b1c;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* 推荐加点 */
+#content .hero_detail .detail_right .add_point{
+    position: relative;
+    width: 638px;
+    padding: 10px 13px 30px;
+    background-color: #0f0f0f;
+}
+#content .hero_detail .detail_right .add_point .point_detail{
+    width: 644px;
+    height: 38px;
+    margin-top: 5px;
+}
+#content .hero_detail .detail_right .add_point .point_detail span.skill_s_img{
+    float: left;
+    width: 38px;
+    height: 38px;
+}
+#content .hero_detail .detail_right .add_point .point_detail span.skill_s_img>img{
+    width:100%;
+    height:100%;
+}
+#content .hero_detail .detail_right .add_point .point_detail ul.point_ul{
+    float: left;
+    width: 600px;
+    height: 32px;
+    padding: 4px 0 0 6px;
+    overflow: hidden;
+}
+#content .hero_detail .detail_right .add_point .point_detail ul.point_ul>li{
+    border:1px solid #451E19;
+    float: left;
+    display: inline;
+    width: 23px;
+    height: 30px;
+    margin-right: 1px;
+    text-align: center;
+    line-height: 30px;
+    color:#A7A8AA;
+}
+/* 装备选择 */
+#content .hero_detail .detail_right .equip{
+    width: 638px;
+    padding: 10px 13px 30px;
+    background-color: #0f0f0f;
+}
+#content .hero_detail .detail_right .equip .equip_box{
+    width: 100%;
+    position:relative;
+}
+#content .hero_detail .detail_right .equip .equip_box>p{
+    height: 26px;
+    color: #8b3425;
+    text-indent: 10px;
+    display: inline-block;
+    font: normal 14px/26px "微软雅黑";
+}
+#content .hero_detail .detail_right .equip .equip_box>.all_rcomd{
+    width: 634px;
+}
+#content .hero_detail .detail_right .equip .equip_box>.all_rcomd>.equip_detail{
+    float: left;
+    display: inline;
+    width: 305px;
+    height: 87px;
+    margin: 10px 5px 0;
+    background-color: #141516;
+    border: 1px solid #1b1d1e;
+}
+#content .hero_detail .detail_right .equip .equip_box>.all_rcomd>.equip_detail>span{
+    float: left;
+    width: 100px;
+    height: 87px;
+    font: bold 14px/86px "微软雅黑";
+    background-color: #0a0a0b;
+    text-align: center;
+}
+#content .hero_detail .detail_right .equip .equip_box>.all_rcomd>.equip_detail>ul.equip_ul{
+    float: left;
+    width: 195px;
+    height: 77px;
+    padding: 5px;
+}
+#content .hero_detail .detail_right .equip .equip_box>.all_rcomd>.equip_detail>ul.equip_ul>li{
+    float: left;
+    display: inline;
+    width: 43px;
+    height: 32px;
+    margin: 5px 2px 0;
+}
+#content .hero_detail .detail_right .equip .equip_box>.all_rcomd>.equip_detail>ul.equip_ul>li>img{
+    display: block;
+    width: 43px;
+    height: 32px;
+}
+
+/* 英雄适配 */
+#content .hero_detail .detail_right .adaptive{
+    width: 638px;
+    padding: 10px 13px 30px;
+    background-color: #0f0f0f;
+}
+#content .hero_detail .detail_right .adaptive .adap_box{
+    width: 100%;
+    position:relative;
+}
+#content .hero_detail .detail_right .adaptive .adap_box>p{
+    height: 26px;
+    color: #8b3425;
+    text-indent: 10px;
+    font: normal 14px/26px "微软雅黑";
+}
+#content .hero_detail .detail_right .adaptive .adap_box>ul.adap_ul{
+    width: 608px;
+    margin: 10px auto 0;
+    padding: 25px 10px 5px;
+    background-color: #141516;
+    border: 1px solid #1b1d1e;
+    overflow: hidden;
+}
+#content .hero_detail .detail_right .adaptive .adap_box>ul.adap_ul>li{
+    float: left;
+    display: inline;
+    width: 133px;
+    margin: 0 9px;
+    height: 116px;
+    text-align: center;
+}
+#content .hero_detail .detail_right .adaptive .adap_box>ul.adap_ul>li>a.adap_img{
+    display: block;
+    width: 127px;
+    height: 71px;
+}
+#content .hero_detail .detail_right .adaptive .adap_box>ul.adap_ul>li>a.adap_img>img{
+    width:100%;
+    height:100%;
+}
+#content .hero_detail .detail_right .adaptive .adap_box>ul.adap_ul>li>a.adap_name{
+    color: #6e6e6e;
+    font-size:12px;
+}

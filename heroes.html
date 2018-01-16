@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>英雄 Heroes - 《DOTA2》</title>
+    <link rel="Shortcut Icon" href="img/main/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/stackCarousel.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/heroes.css">
+</head>
+<body>
+<div id="header">
+
+</div>
+
+<div id="content">
+    <div class="bg">
+        <!-- top -->
+        <div class="hero_top clear">
+            <!-- left top -->
+            <ul class="top_tab_ul">
+                <li><a href="#">全部英雄</a></li>
+                <li><a href="#">英雄排行</a></li>
+                <li><a href="#">英雄对比</a></li>
+            </ul>
+            <!-- right top  -->
+            <div class="top_search">
+                <div class="top_search_help">
+                    <input type="text" placeholder="请输入搜索内容" class="search_inp">
+                    <a href="#" class="search_a">搜索</a>
+                </div>
+                <div class="top_search_help">
+                    <a href="#" class="btn_col"></a>
+                    <a href="#" class="btn_err"></a>
+                </div>
+            </div>
+        </div>
+        <!-- 请选择英雄 -->
+        <div class="hero_cont">
+            <div class="hero_cont_info">
+                <!-- 显示英雄名称 和 英雄定位 -->
+                <div class="tit_box">
+                    <div class="hero_name">所有英雄</div>
+                    <div class="hero_roles">
+                        <span class="hero_attr">近战</span>
+                        <span class="hero_attr_more"> - 近战 - 爆发 - 物理</span>
+                    </div>
+                </div>
+                <!-- 英雄过滤 -->
+                <div class="hero_filters">
+                    <span>英雄筛选:</span>
+                    <!-- 英雄定位 -->
+                    <select onchange="updateFilters()" id="filterRole" class="filterSelect" name="filters">
+                        <option value="">按定位</option>
+                        <option value="">所有</option>
+                        <option value="Carry">核心</option>
+                        <option value="Disabler">控制</option>
+                        <!--<option value="LaneSupport">对线辅助</option>-->
+                        <option value="Initiator">先手</option>
+                        <option value="Jungler">打野</option>
+                        <option value="Support">辅助</option>
+                        <option value="Durable">耐久</option>
+                        <option value="Nuker">爆发</option>
+                        <option value="Pusher">推进</option>
+                        <option value="Escape">逃生</option>
+                    </select>
+                    <!-- 攻击类型 -->
+                    <select onchange="updateFilters()" id="filterAttack" class="filterSelect" name="">
+                        <option value="">按攻击类型</option>
+                        <option value="">所有</option>
+                        <option value="melee">近战</option>
+                        <option value="ranged">远程</option>
+                    </select>
+                    <!-- 英雄名称 -->
+                    <select onchange="updateFilters()" id="filterName" class="filterSelect noCaps" name="">
+                        <option value="">英雄名称</option>
+                        <option value="">所有</option>
+                        <option value="antimage">敌法师</option>
+                        <option value="axe">斧王</option>
+                        <option value="bane">祸乱之源</option>
+                        <option value="bloodseeker">嗜血狂魔</option>
+                        <option value="crystal_maiden">水晶室女</option>
+                        <option value="drow_ranger">卓尔游侠</option>
+                        <option value="earthshaker">撼地者</option>
+                        <option value="juggernaut">主宰</option>
+                        <option value="mirana">米拉娜</option>
+                        <option value="nevermore">影魔</option>
+                        <option value="morphling">变体精灵</option>
+                        <option value="phantom_lancer">幻影长矛手</option>
+                        <option value="puck">帕克</option>
+                        <option value="pudge">帕吉</option>
+                        <option value="razor">剃刀</option>
+                        <option value="sand_king">沙王</option>
+                        <option value="storm_spirit">风暴之灵</option>
+                        <option value="sven">斯温</option>
+                        <option value="tiny">小小</option>
+                        <option value="vengefulspirit">复仇之魂</option>
+                        <option value="windrunner">风行者</option>
+                        <option value="zuus">宙斯</option>
+                        <option value="kunkka">昆卡</option>
+                        <option value="lina">莉娜</option>
+                        <option value="lich">巫妖</option>
+                        <option value="lion">莱恩</option>
+                        <option value="shadow_shaman">暗影萨满</option>
+                        <option value="slardar">斯拉达</option>
+                        <option value="tidehunter">潮汐猎人</option>
+                        <option value="witch_doctor">巫医</option>
+                        <option value="riki">力丸</option>
+                        <option value="enigma">谜团</option>
+                        <option value="tinker">修补匠</option>
+                        <option value="sniper">狙击手</option>
+                        <option value="necrolyte">瘟疫法师</option>
+                        <option value="warlock">术士</option>
+                        <option value="beastmaster">兽王</option>
+                        <option value="queenofpain">痛苦女王</option>
+                        <option value="venomancer">剧毒术士</option>
+                        <option value="faceless_void">虚空假面</option>
+                        <option value="skeleton_king">冥魂大帝</option>
+                        <option value="death_prophet">死亡先知</option>
+                        <option value="phantom_assassin">幻影刺客</option>
+                        <option value="pugna">帕格纳</option>
+                        <option value="templar_assassin">圣堂刺客</option>
+                        <option value="viper">冥界亚龙</option>
+                        <option value="luna">露娜</option>
+                        <option value="dragon_knight">龙骑士</option>
+                        <option value="dazzle">戴泽</option>
+                        <option value="rattletrap">发条技师</option>
+                        <option value="leshrac">拉席克</option>
+                        <option value="furion">先知</option>
+                        <option value="life_stealer">噬魂鬼</option>
+                        <option value="dark_seer">黑暗贤者</option>
+                        <option value="clinkz">克林克兹</option>
+                        <option value="omniknight">全能骑士</option>
+                        <option value="enchantress">魅惑魔女</option>
+                        <option value="huskar">哈斯卡</option>
+                        <option value="night_stalker">暗夜魔王</option>
+                        <option value="broodmother">育母蜘蛛</option>
+                        <option value="bounty_hunter">赏金猎人</option>
+                        <option value="weaver">编织者</option>
+                        <option value="jakiro">杰奇洛</option>
+                        <option value="batrider">蝙蝠骑士</option>
+                        <option value="chen">陈</option>
+                        <option value="spectre">幽鬼</option>
+                        <option value="doom">末日使者</option>
+                        <option value="ancient_apparition">远古冰魄</option>
+                        <option value="ursa">熊战士</option>
+                        <option value="spirit_breaker">裂魂人</option>
+                        <option value="gyrocopter">矮人直升机</option>
+                        <option value="alchemist">炼金术士</option>
+                        <option value="invoker">祈求者</option>
+                        <option value="silencer">沉默术士</option>
+                        <option value="obsidian_destroyer">殁境神蚀者</option>
+                        <option value="lycan">狼人</option>
+                        <option value="brewmaster">酒仙</option>
+                        <option value="shadow_demon">暗影恶魔</option>
+                        <option value="lone_druid">德鲁伊</option>
+                        <option value="chaos_knight">混沌骑士</option>
+                        <option value="meepo">米波</option>
+                        <option value="treant">树精卫士</option>
+                        <option value="ogre_magi">食人魔魔法师</option>
+                        <option value="undying">不朽尸王</option>
+                        <option value="rubick">拉比克</option>
+                        <option value="disruptor">干扰者</option>
+                        <option value="nyx_assassin">司夜刺客</option>
+                        <option value="naga_siren">娜迦海妖</option>
+                        <option value="keeper_of_the_light">光之守卫</option>
+                        <option value="wisp">艾欧</option>
+                        <option value="visage">维萨吉</option>
+                        <option value="slark">斯拉克</option>
+                        <option value="medusa">美杜莎</option>
+                        <option value="troll_warlord">巨魔战将</option>
+                        <option value="centaur">半人马战行者</option>
+                        <option value="magnataur">马格纳斯</option>
+                        <option value="shredder">伐木机</option>
+                        <option value="bristleback">钢背兽</option>
+                        <option value="tusk">巨牙海民</option>
+                        <option value="skywrath_mage">天怒法师</option>
+                        <option value="abaddon">亚巴顿</option>
+                        <option value="elder_titan">上古巨神</option>
+                        <option value="legion_commander">军团指挥官</option>
+                        <option value="ember_spirit">灰烬之灵</option>
+                        <option value="earth_spirit">大地之灵</option>
+                        <option value="terrorblade">恐怖利刃</option>
+                        <option value="phoenix">凤凰</option>
+                        <option value="oracle">神谕者</option>
+                        <option value="techies">工程师</option>
+                        <option value="techies">邪影芳灵</option>
+                        <option value="winter_wyvern">寒冬飞龙</option>
+                        <option value="arc_warden">天穹守望者</option>
+                        <option value="monkey_king">齐天大圣</option>
+                        <option value="pangolier">石鳞剑士</option>
+                        <option value="abyssal_underlord">孽主</option>
+                    </select>
+                </div>
+                <!-- 英雄过滤后显示出来 -->
+                <div class="hero_show">
+                    <!-- 力量型英雄 -->
+                    <ul class="hero_list">
+                        <li class="hero_list_tit">
+                            <span class="hero_str">力量</span>
+                        </li>
+                        <li class="hero_show_list">
+                            <a href="#">
+                                <!-- 大图 hide -->
+                                <img src="img/heroes/earthshaker_hphover-w384.png" class="hero_hover_lg">
+                                <!-- 小图 show -->
+                                <img src="img/heroes/earthshaker_sb-w385.png" class="hero_hover_sm">
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 敏捷型英雄 -->
+                    <ul class="hero_list">
+                        <li class="hero_list_tit">
+                            <span class="hero_agi">敏捷</span>
+                        </li>
+                        <li class="hero_show_list">
+                            <a href="#">
+                                <!-- 大图 hide -->
+                                <img src="img/heroes/antimage_hphover-w427.png" class="hero_hover_lg">
+                                <!-- 小图 show -->
+                                <img src="img/heroes/antimage_sb-w428.png" class="hero_hover_sm">
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 智力型英雄 -->
+                    <ul class="hero_list">
+                        <li class="hero_list_tit">
+                            <span class="hero_int">智力</span>
+                        </li>
+                        <li class="hero_show_list">
+                            <a href="#" class="clear">
+                                <!-- 大图 hide -->
+                                <img src="img/heroes/crystal_maiden_hphover-w469.png" class="hero_hover_lg">
+                                <!-- 小图 show -->
+                                <img src="img/heroes/crystal_maiden_sb-w468.png" class="hero_hover_sm">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+
+</div>
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+    $(".hero_show_list>a").hover(
+        function (){
+            $(this).children(".hero_hover_lg").show()
+        },
+        function(){
+            $(this).children(".hero_hover_lg").hide()
+        })
+</script>
+</html>

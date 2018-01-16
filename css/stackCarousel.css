@@ -1,0 +1,154 @@
+.list{
+    width: 420px;
+    /*height: 300px;*/
+    position: relative;
+    overflow: hidden;   /*溢出的隐藏掉，默认的是：内容不会被修剪，会呈现在元素框之外。*/
+}
+.list>ul{
+    width:300px;
+    height:175px;
+    margin:0 auto;
+    position:relative;
+}
+.list>ul>li{
+    display: inline-block;
+    list-style: none;
+    position: absolute;   /*一定要设置这个*/
+    top: 0;
+    left: -25px;
+    /*opacity: 0;*/
+    transition: all 0.3s ease-out;
+}
+.list>ul>li>a{
+    display: inline-block;
+    position:relative;
+    width:230px;
+    height:165px;
+}
+.list>ul>li>a>img{
+    width:230px;
+    htight:135px;
+}
+.list>ul>li>a>p{
+    position:absolute;
+    bottom:5px;
+    left:0px;
+    display:inline-block;
+    width:100%;
+    height:30px;
+    font-size:16px;
+    background:#222328;
+    text-align: center;
+}
+.list>ul>li>a>img{
+    border: none;
+    width: 230px;
+    height: 135px;
+    float: left;
+}
+
+.list>ul>li.p5{
+    transform: translate3d(-60px,0,0) scale(0.81);
+    transform-origin: 100% 25%;
+    opacity: 0.8;
+    z-index: 2;
+}
+.list>ul>li.p4{
+    transform:translate3d(60px,0,0) scale(1);
+    z-index: 3;
+    opacity: 1;
+}
+.list>ul>li.p3{
+    transform: translate3d(140px,0,0) scale(0.81);
+    transform-origin: 100% 25%; /*改变基准的*/
+    opacity: 0.8;
+    z-index: 2;
+}
+.list>ul>li.p2{
+    transform:translate3d(100px,0,0) scale(0.81);
+}
+.list>ul>li.p1{
+    transform:translate3d(120px,0,0) scale(0.81);
+}
+.list .pre{
+    left: 0px;
+    top:50%;
+}
+.list .next{
+    right: 0px;
+    top:50%;
+}
+.list .button{
+    position: absolute;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top:-14px;
+    z-index: 5;
+}
+.list a:active{
+    color: #000;
+    opacity:0.5;
+}
+
+.list .buttons{
+    position: absolute;
+    width: 420px;
+    height: 30px;
+    bottom:-15px;
+    /*left:50%;*/
+    /*            margin-top: -15px;*/
+    text-align: center;
+    z-index:10;
+}
+.list .buttons a{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    /*padding-top: 4px;*/
+    cursor: pointer;
+}
+.list .buttons a>span{
+    width: 10px;
+    height: 10px;
+    border:1px solid #F3F3F3;
+    border-radius:50%;
+    background: transparent;
+    display: block;
+}
+.list .buttons a>span.blue{
+    background: red;
+}
+
+
+/* header */
+/*#header .header-top .header-nav ul li:hover   .link_show{*/
+    /*display: inline-block;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
